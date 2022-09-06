@@ -75,4 +75,16 @@ li {
 }
 #min {
   margin-bottom: 0;
+  color: blue;
+}
+#max {
+  color: red;
+}
+.img-btn {
+  background-image: url(../images/loc.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left, center;
+  cursor: pointer;
+  padding-left: 36px;
 }
