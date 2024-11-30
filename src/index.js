@@ -54,7 +54,7 @@ function handleSubmit(event) {
 }
 
 function citySearch(city) {
-  let apiKey = "a7acd530e7eaaf23ad3af01b6ca44155";
+  let apiKey = "e3790bfec16258b192d5a2523c9343bb";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
@@ -68,8 +68,8 @@ form.addEventListener("submit", handleSubmit);
 function showPosition(position) {
   var lat = position.coords.latitude;
   var long = position.coords.longitude;
-  let apiKey = "a7acd530e7eaaf23ad3af01b6ca44155";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
+  let apiKey = "e3790bfec16258b192d5a2523c9343bb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lat}&lat=${coordinates.lon}&cnt=7&key=${apiKey}&units=metric`;
   axios.get(url).then(showTemperature);
 }
 function retrievePosition(event) {
